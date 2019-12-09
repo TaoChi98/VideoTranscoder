@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Window size="600,260" sizebox="4,4,4,4" caption="0,0,0,45" showshadow="true" shadowsize="5" shadowposition="1,1" shadowcolor="#0xff333333">
+	<font id="1" name="楷书" size="16" bold="false"/>
+	<font id="2" name="平方" size="32" bold="true"/>
+	<font id="3" name="微软雅黑" size="16" bold="false"/>
+	<font id="4" name="微软雅黑" size="14" bold="false"  />
+	<font id="5" name="微软雅黑" size="18" bold="false"/>
+	<font id="6" name="平方" size="16" bold="false"/>
+	<font id="7" name="微软雅黑" size="12" bold="false"/>
+	<VerticalLayout height="600" width="280"  bkcolor="0xFFD5E4F2">
+			 <HorizontalLayout height="45"  bkcolor="0xFFbfdbff">
+		  	 <Label text="参数设置" font="3" textcolor="0xff3d3f41" textpadding="20,1,0,0" />
+		  	 <Control />
+		  	 <Button name="closebtn" width="45" normalimage="file='closeBtn.png' source='0,0,45,45'" hotimage="file='closeBtn.png' source='45,0,90,45'" pushedimage="file='closeBtn.png' source='90,0,135,45'"/>
+		   </HorizontalLayout>
+		   <Control  height="15"/>
+			 <HorizontalLayout height="35">
+			 	  <Control  width="70"/>
+			 	  <Label    text="转码输出目录：" textcolor="0xff3d3f41" width="110" font="3" textpadding="2,5,0,0" />
+			    <Control  width="15"/>
+			    <Edit   name="SetFilePath"    width="300" font="4" textpadding="5,3,0,0" bkimage="../skin/filePath.png"/>
+			    <Control  width="10"/>
+			    <VerticalLayout >
+			    	<Control  height="9"/>
+			    	<Button name="SetOpenFilePathBtn" pos="0,15,0,0" width="25" height="20" normalimage="file='openOutFile.png' source='0,0,25,20'" hotimage="file='openOutFile.png' source='25,0,50,20'" />
+			    </VerticalLayout>
+			 </HorizontalLayout>
+			 <Control  height="15"/>
+			 <HorizontalLayout height="35">
+			    <Control width="20"/>
+			    <Label    text="同时执行任务最大数：" textcolor="0xff3d3f41" width="165" font="3" textpadding="7,5,0,0" />
+			    <Control  width="10"/>
+			    <Combo name="RunTaskNum"   align="center" pos="102,5,0,0"  width="300" height="35"  bkimage="../skin/fileType.png" itemfont="4">
+             <ListLabelElement itemfont="7" text=" 1"  textpadding="5,1,0,0"/>   
+             <ListLabelElement itemfont="7" text=" 2" selected="true" textpadding="5,1,0,0"/> 
+             <ListLabelElement itemfont="7" text=" 3" textpadding="5,1,0,0"/> 
+             <ListLabelElement itemfont="7" text=" 4"  textpadding="5,1,0,0"/> 
+             <ListLabelElement itemfont="7" text=" 5"  textpadding="5,1,0,0"/> 
+          </Combo>
+			 </HorizontalLayout>
+			 <Control  height="35"/>
+			  <HorizontalLayout height="40">
+			  	 <Control  width="340"/>
+			 	   <Button name="TaskDerBtn"   pos="200,0,0,0" width="130" normalimage="file='okBtn.png' source='0,0,130,40'" hotimage="file='okBtn.png' source='130,0,260,40'" pushedimage="file='okBtn.png' source='260,0,390,40'"/>
+			     <Control  width="20"/>
+			      <Button name="TaskCancleBtn" normalimage="file='cancleBtn.png' source='0,0,100,40'" hotimage="file='cancleBtn.png' source='100,0,200,40'" pushedimage="file='cancleBtn.png' source='200,0,300,40'"/>
+			  	<Control width="10"/>
+			  </HorizontalLayout>
+	</VerticalLayout>
+</Window>

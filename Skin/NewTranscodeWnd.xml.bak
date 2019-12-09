@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Window size="500,600" caption="0,0,0,40"   sizebox="10,10,12,12" roundcorner="0,0" shadow="true" shadowimage="shadow.png" shadowtopleft="0,0,5,3" shadowtopright="205,0,5,3" shadowbottomleft="0,136,5,7" shadowbottomright="205,136,5,7" >
+	<font id="1" name="楷书" size="16" bold="false"/>
+	<font id="2" name="平方" size="14" bold="false"/>
+	<font id="3" name="微软雅黑" size="16" bold="false"/>
+	<font id="4" name="微软雅黑" size="16" bold="false"  />
+	<font id="5" name="微软雅黑" size="18" bold="false"/>
+	<font id="6" name="微软雅黑" size="14" bold="false"/>
+	<font id="7" name="微软雅黑" size="12" bold="false"/>
+		<Default name="VScrollBar" value="button1normalimage=&quot;file='scroll.png' source='0,0,16,16'&quot; button1hotimage=&quot;file='scroll.png' source='0,0,16,16' mask='#FFFF00FF'&quot; button1pushedimage=&quot;file='scroll.png' source='0,16,16,32' mask='#FFFF00FF'&quot; button1disabledimage=&quot;file='scroll.png' source='0,0,16,16' mask='#FFFF00FF'&quot; button2normalimage=&quot;file='scroll.png' source='0,32,16,48' mask='#FFFF00FF'&quot; button2hotimage=&quot;file='scroll.png' source='0,32,16,48' mask='#FFFF00FF'&quot; button2pushedimage=&quot;file='scroll.png' source='0,48,16,64' mask='#FFFF00FF'&quot; button2disabledimage=&quot;file='scroll.png' source='0,32,16,48' mask='#FFFF00FF'&quot; thumbnormalimage=&quot;file='scroll.png' source='0,64,16,80' corner='2,2,2,2' mask='#FFFF00FF'&quot; thumbhotimage=&quot;file='scroll.png' source='0,64,16,80' corner='2,2,2,2' mask='#FFFF00FF'&quot; thumbpushedimage=&quot;ffile='scroll.png' source='0,64,16,80' corner='2,2,2,2' mask='#FFFF00FF'&quot; thumbdisabledimage=&quot;file='scroll.png' source='0,64,16,80' corner='2,2,2,2' mask='#FFFF00FF'&quot; railnormalimage=&quot;file='scroll.png' source='0,80,16,96' corner='2,2,2,2' mask='#FFFF00FF'&quot; railhotimage=&quot;file='scroll.png' source='0,80,16,96' corner='2,2,2,2' mask='#FFFF00FF'&quot; railpushedimage=&quot;file='scroll.png' source='0,96,16,112' corner='2,2,2,2' mask='#FFFF00FF'&quot; raildisabledimage=&quot;file='scroll.png' source='0,80,16,96' corner='2,2,2,2' mask='#FFFF00FF'&quot; bknormalimage=&quot;file='scroll.png' source='0,128,16,146' corner='2,2,2,2' mask='#FFFF00FF'&quot; bkhotimage=&quot;file='scroll.png' source='0,128,16,146' corner='2,2,2,2' mask='#FFFF00FF'&quot; bkpushedimage=&quot;file='scroll.png' source='0,128,16,146' corner='2,2,2,2' mask='#FFFF00FF'&quot; bkdisabledimage=&quot;file='scroll.png' source='0,128,16,146' corner='2,2,2,2' mask='#FFFF00FF'&quot; " />
+	<VerticalLayout height="500" width="600"  bkcolor="0xffD5E4F2" >
+		  <HorizontalLayout height="45" bkcolor="0xFFbfdbff">
+		  	 <Label text="新建转码" font="3" textcolor="0xff3d3f41" textpadding="20,1,0,0" />
+		  	 <Control />
+		  	 <Button name="closebtn" width="45" normalimage="file='closeBtn.png' source='0,0,45,45'" hotimage="file='closeBtn.png' source='45,0,90,45'" pushedimage="file='closeBtn.png' source='90,0,135,45'"/>
+		  </HorizontalLayout>
+		  <HorizontalLayout height="40" >
+		     <Label float="true" pos="20,5,0,0" width="20" height="30" bkimage="../skin/newAddBtn.png"/>
+		     <Button name ="NewAddBtn" textcolor="0xff3d3f41" float="true" pos="43,5,0,0" width="50" height="30" text="导入" font="3" pushedtextcolor="0xff8B8989"/>
+		     <Label float="true" pos="140,5,0,0" width="20" height="30" bkimage="../skin/newDeleteBtn.png"/>
+		     <Button name ="NewDeleteBtn" textcolor="0xff3d3f41" float="true" pos="163,5,0,0" width="50" height="30" text="删除" font="3" hottextcolor="0xff8B8989" pushedtextcolor="0xff000000"/>
+		  </HorizontalLayout>
+		  <HorizontalLayout height="220" >
+				    <List name="newdomainlist"  itemshowrowline="true" itemselectedbkcolor="0xffD9E0E7" itemfont="7"  bkcolor="#0xffebeef3" inset="0,0,0,0"  vscrollbar="true" hscrollbar="true"  headerbkcolor="0xffB8CFE9" itembkcolor="#0xffebeef3" itemaltbk="false" hscrollbar="false">
+			         <ListHeader height="30" bkcolor="0xffB8CFE9" font="6" >
+				          <ListHeaderItem  align="center" name="srcFiles" dragable="false" text="源文件"  width="180" font="6"   sepimage="file='examine_background.bmp'" sepwidth="1" sepimm="false"/>
+				          <ListHeaderItem name="isTranc" text="能否转码" dragable="false" width="110" font="6"   sepimage="file='examine_background.bmp'" sepwidth="1"/>
+				          <ListHeaderItem name="highSet" text="高级设置" dragable="false" font="6" width="110"  sepimage="file='examine_background.bmp'" sepwidth="1"/>
+			         </ListHeader>
+		       </List>
+			 </HorizontalLayout>
+			  <Control  height="20"/>
+			 <HorizontalLayout height="37">
+			 	  <Label text="转码类型:  "   textcolor="0xff3d3f41"  pos="0,0,0,0" width="100" font="4" textpadding="20,5,0,0" />
+			 	  <Control  width="10"/>
+			 	  <Combo name="TranscodeType" float="true" itemfont="6" align="center" pos="110,2,0,0"  width="300" height="35" bkimage="../skin/fileType.png" >
+               <ListLabelElement font="4" text="  标准AVI格式" selected="true" textpadding="5,1,0,0"/>
+               <ListLabelElement itemfont="4" text="  MP4格式" textpadding="5,1,0,0"/>
+          </Combo>
+			 </HorizontalLayout>
+			 <Control  height="10"/>
+			 <HorizontalLayout height="37">
+			 	  <Label text="目标路径:  "  textcolor="0xff3d3f41"  pos="0,0,0,0" width="100" font="4" textpadding="20,5,0,0" />
+			 	  <Control  width="10"/>
+			 	  <Edit name="FilePath"   enabled="true" width="300" font="6" textpadding="6,1,0,0" height="35" bkimage="../skin/filePath.png"/>
+			    <Control  width="10"/>
+			    <VerticalLayout >
+			    	 <Control  height="9"/>
+			    	<Button name="openFilePathBtn" pos="0,15,0,0" width="25" height="20" normalimage="file='openOutFile.png' source='0,0,25,20'" hotimage="file='openOutFile.png' source='25,0,50,20'" />
+			    </VerticalLayout>
+			    
+			 </HorizontalLayout>
+			 <Control  height="10"/>
+			 <HorizontalLayout height="37">
+			 	  <Label text="磁盘大小:  " textcolor="0xff3d3f41"  pos="0,0,0,0" width="100" font="4" textpadding="20,5,0,0" />
+			 	  <Control  width="10"/>
+			 	  <Label name="DiskSize"    width="300" height="35" font="6" textpadding="5,1,0,0" bkimage="../skin/filePath.png"/>
+			 </HorizontalLayout>
+			 <Control  height="10"/>
+			 <HorizontalLayout height="30">
+			 	  <Label text="码率的一般计算公式(仅参考):"  textcolor="0xff3d3f41"  pos="0,0,0,0" width="300" font="4" textpadding="20,5,0,0" />
+			  </HorizontalLayout>
+			 <Control  height="5"/>
+			 <HorizontalLayout height="30">
+			 	  <Label text="文件大小(MB) X 1024 X 8/总时长(秒单位) = 码率Kbps" textcolor="0xff3d3f41"  pos="0,0,0,0"  font="4" textpadding="35,5,0,0" />
+			  </HorizontalLayout>
+			  <Control  height="15"/>
+			  <HorizontalLayout height="40">
+			  	 <Control  width="240"/>
+			 	   <Button name="NewDerBtn"   pos="200,0,0,0" width="130" normalimage="file='okBtn.png' source='0,0,130,40'" hotimage="file='okBtn.png' source='130,0,260,40'" pushedimage="file='okBtn.png' source='260,0,390,40'"/>
+			     <Control  width="20"/>
+			      <Button name="NewCancleBtn" normalimage="file='cancleBtn.png' source='0,0,100,40'" hotimage="file='cancleBtn.png' source='100,0,200,40'" pushedimage="file='cancleBtn.png' source='200,0,300,40'"/>
+			  	<Control width="10"/>
+			  </HorizontalLayout>
+	</VerticalLayout>
+</Window>

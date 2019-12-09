@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Window size="450,200"  caption="0,0,0,45">
+	<font id="1" name="楷书" size="16" bold="false"/>
+	<font id="2" name="平方" size="32" bold="true"/>
+	<font id="3" name="微软雅黑" size="14" bold="false"/>
+	<font id="4" name="微软雅黑" size="16" bold="false"  />
+	<font id="5" name="微软雅黑" size="18" bold="false"/>
+	<font id="6" name="平方" size="16" bold="false"/>
+	<font id="7" name="楷书" size="16" bold="false"/>
+	<VerticalLayout width="450" height="200"  bkcolor="0xFFD5E4F0">
+			 <HorizontalLayout height="40"  bkcolor="0xffB8CFE9">
+		  	 <Label text="消息提示" font="4" textpadding="10,1,0,0" />
+		  	 <Control />
+		  	 <Button name="closebtn" width="45" normalimage="file='closeBtn.png' source='0,0,45,45'" hotimage="file='closeBtn.png' source='45,0,90,45'" pushedimage="file='closeBtn.png' source='90,0,135,45'"/>
+		   </HorizontalLayout>
+		   <Control  height="25"/>
+			 <HorizontalLayout height="37">
+			 	  <Control  width="100"/>
+			 	   <Label bkimage="../skin/mark.png" pos="0,5,0,0" width="32" height="32" font="1" textpadding="10,1,0,0" />
+			 	   <Label    text="任务未全部完成，确认退出？" width="300" font="4" textpadding="2,0,0,0" />		
+			 </HorizontalLayout>
+			 <Control  height="30"/>
+			 <HorizontalLayout height="40">
+			  	 <Control  width="200"/>
+			 	   <Button name="DerBtn"   pos="200,0,0,0" width="120" normalimage="file='okBtn.png' source='0,0,130,40'" hotimage="file='okBtn.png' source='130,0,260,40'" pushedimage="file='okBtn.png' source='260,0,390,40'"/>
+			     <Control  width="20"/>
+			      <Button name="CloseBtn" normalimage="file='cancleBtn.png' source='0,0,100,40'" hotimage="file='cancleBtn.png' source='100,0,200,40'" pushedimage="file='cancleBtn.png' source='200,0,300,40'"/>
+			  	 <Control width="10"/>
+			  </HorizontalLayout>
+			 
+	</VerticalLayout>
+</Window>

@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Window size="1080,800" caption="0,0,0,40" sizebox="4,4,4,4" showshadow="true" shadowsize="5" shadowposition="1,1" shadowcolor="#0xff333333" >
+	<font id="1" name="微软雅黑" size="16" bold="true"/>
+	<font id="2" name="平方" size="16" bold="false"/>
+	<font id="3" name="微软雅黑" size="16" bold="false"/>
+	<font id="4" name="平方" size="20" bold="true"/>
+	<font id="5" name="平方" size="18" bold="true"/>
+	<font id="6" name="微软雅黑" size="14" bold="false"/>
+	<font id="7" name="微软雅黑" size="12" bold="false"/>
+	<Default name="VScrollBar" value="button1normalimage=&quot;file='scroll.png' source='0,0,16,16'&quot; button1hotimage=&quot;file='scroll.png' source='0,0,16,16' mask='#FFFF00FF'&quot; button1pushedimage=&quot;file='scroll.png' source='0,16,16,32' mask='#FFFF00FF'&quot; button1disabledimage=&quot;file='scroll.png' source='0,0,16,16' mask='#FFFF00FF'&quot; button2normalimage=&quot;file='scroll.png' source='0,32,16,48' mask='#FFFF00FF'&quot; button2hotimage=&quot;file='scroll.png' source='0,32,16,48' mask='#FFFF00FF'&quot; button2pushedimage=&quot;file='scroll.png' source='0,48,16,64' mask='#FFFF00FF'&quot; button2disabledimage=&quot;file='scroll.png' source='0,32,16,48' mask='#FFFF00FF'&quot; thumbnormalimage=&quot;file='scroll.png' source='0,64,16,80' corner='2,2,2,2' mask='#FFFF00FF'&quot; thumbhotimage=&quot;file='scroll.png' source='0,64,16,80' corner='2,2,2,2' mask='#FFFF00FF'&quot; thumbpushedimage=&quot;ffile='scroll.png' source='0,64,16,80' corner='2,2,2,2' mask='#FFFF00FF'&quot; thumbdisabledimage=&quot;file='scroll.png' source='0,64,16,80' corner='2,2,2,2' mask='#FFFF00FF'&quot; railnormalimage=&quot;file='scroll.png' source='0,80,16,96' corner='2,2,2,2' mask='#FFFF00FF'&quot; railhotimage=&quot;file='scroll.png' source='0,80,16,96' corner='2,2,2,2' mask='#FFFF00FF'&quot; railpushedimage=&quot;file='scroll.png' source='0,96,16,112' corner='2,2,2,2' mask='#FFFF00FF'&quot; raildisabledimage=&quot;file='scroll.png' source='0,80,16,96' corner='2,2,2,2' mask='#FFFF00FF'&quot; bknormalimage=&quot;file='scroll.png' source='0,128,16,146' corner='2,2,2,2' mask='#FFFF00FF'&quot; bkhotimage=&quot;file='scroll.png' source='0,128,16,146' corner='2,2,2,2' mask='#FFFF00FF'&quot; bkpushedimage=&quot;file='scroll.png' source='0,128,16,146' corner='2,2,2,2' mask='#FFFF00FF'&quot; bkdisabledimage=&quot;file='scroll.png' source='0,128,16,146' corner='2,2,2,2' mask='#FFFF00FF'&quot; " />
+		<VerticalLayout height="1080" width="800" bkcolor="0xffD5E4F2" >
+				<HorizontalLayout height="45" bkcolor="0xFFbfdbff">
+					 <HorizontalLayout />
+					 <HorizontalLayout width="300">
+					 	  <Label float="true" pos="170,5,0,0" width="130" height="34" bkimage="logo.png"  />
+					 </HorizontalLayout>
+					  <HorizontalLayout />
+					 <HorizontalLayout width="182">
+					 	 <Button name="SetBtn" float="true" pos="0,0,0,0" width="45" height="45" normalimage="file='setBtn.png' source='0,0,45,45'" hotimage="file='setBtn.png' source='45,0,90,45'" pushedimage="file='setBtn.png' source='90,0,135,45'"/> 
+					   <Label  float="true" pos="45,14,0,0" width="1" height="17" bkimage="rect.png"/> 			
+					   <Button name="minbtn" float="true" pos="46,0,0,0" width="45" height="45" normalimage="file='minBtn.png' source='0,0,45,45'" hotimage="file='minBtn.png' source='45,0,90,45'" pushedimage="file='minBtn.png' source='90,0,135,45'"/> 
+					   <Button name="maxbtn" float="true" pos="91,0,0,0" width="45" height="45" normalimage="file='restorBtn.png' source='0,0,45,45'" hotimage="file='restorBtn.png' source='45,0,90,45'" pushedimage="file='restorBtn.png' source='90,0,135,45'"/> 
+					   <Button name="restorebtn" visible="false" float="true" pos="91,0,0,0" width="45" height="45" normalimage="file='maxBtn.png' source='0,0,45,45'" hotimage="file='maxBtn.png' source='45,0,90,45'" pushedimage="file='maxBtn.png' source='90,0,135,45'"/> 					  
+					   <Button name="closeBtn" float="true" pos="136,0,0,0" width="45" height="45" normalimage="file='closeBtn.png' source='0,0,45,45'" hotimage="file='closeBtn.png' source='45,0,90,45'" pushedimage="file='closeBtn.png' source='90,0,135,45'"/> 					
+					 </HorizontalLayout>
+				</HorizontalLayout>
+				<HorizontalLayout  >
+				   <List name="domainlist"  itemendellipsis="true" itemshowrowline="true" itemselectedbkcolor="0xffD9E0E7" itemfont="7"  bkcolor="0xffD5E4F2" inset="0,0,0,0"  vscrollbar="true" hscrollbar="true"  headerbkcolor="0xffB8CFE9"  itembkcolor="#0xffebeef3" itemaltbk="false" hscrollbar="false" >
+			         <ListHeader height="30" bkcolor="0xffB8CFE9" font="6"  >
+				          <ListHeaderItem  align="center" name="StauteItem" dragable="false" text="状态" width="180" font="6"   sepimage="file='examine_background.bmp'" sepwidth="1" sepimm="false"/>
+				          <ListHeaderItem  align="center" name="FileItem" dragable="false" text="源文件" font="6"   sepimage="file='examine_background.bmp'" sepwidth="1"/>
+				          <ListHeaderItem  align="center" name="ProgressItem" dragable="false" text="进度" font="6" width="120"  sepimage="file='examine_background.bmp'" sepwidth="1"/>
+				          <ListHeaderItem  align="center" name="TimeItem" dragable="false" text="耗时" font="6" width="140" sepimage="file='examine_background.bmp'" sepwidth="1"/>   
+				          <ListHeaderItem  align="center" name="OutTypeItem" dragable="false" text="输出格式" font="6"   width="130"  sepimage="file='examine_background.bmp'" sepwidth="1"/>
+			     		    <ListHeaderItem  align="center" name="OutFileItem"  dragable="false" text="输出文件"  font="6"  sepimage="file='examine_background.bmp'" sepwidth="1"/>
+			         </ListHeader>
+		       </List>
+			  </HorizontalLayout>	
+			  <HorizontalLayout height="20"/>
+			  <HorizontalLayout height="135">
+					 <HorizontalLayout />
+					 <HorizontalLayout width="580">
+					 	   <VerticalLayout width="82"  >
+					 	   	  <Button name="AddBtn"  height="82"  normalimage="file='addButton.png' source='0,0,82,82'" hotimage="file='addButton.png' source='82,0,164,82'" pushedimage="file='addButton.png' source='164,0,246,82'"/> 	
+					 	      <Label text="导入" font="3" textcolor="0xff3D3F41" textpadding="20,20,10,10"  height="50"/>
+					 	   </VerticalLayout>
+					 	   <Control  width="40"/>
+					 	   <VerticalLayout width="82"  >
+					 	   	  <Button name="PlayBtn"  height="82"  normalimage="file='playButton.png' source='0,0,82,82'" hotimage="file='playButton.png' source='82,0,164,82'" pushedimage="file='playButton.png' source='164,0,246,82'"/> 	
+					 	      <Label text="开始" font="3" textcolor="0xff3D3F41" textpadding="20,20,10,10"  height="50"/>
+					 	   </VerticalLayout>
+					 	   <Control  width="40"/>
+					 	   <VerticalLayout width="82"  >
+					 	   	  <Button name="PauseBtn"  height="82"  normalimage="file='pauseButton.png' source='0,0,82,82'" hotimage="file='pauseButton.png' source='82,0,164,82'" pushedimage="file='pauseButton.png' source='164,0,246,82'"/> 	
+					 	      <Label text="暂停" font="3" textcolor="0xff3D3F41" textpadding="20,20,10,10"  height="50"/>
+					 	   </VerticalLayout>
+					 	   <Control  width="40"/>
+					 	   <VerticalLayout width="82"  >
+					 	   	  <Button name="DeleteBtn"  height="82"  normalimage="file='deleteButton.png' source='0,0,82,82'" hotimage="file='deleteButton.png' source='82,0,164,82'" pushedimage="file='deleteButton.png' source='164,0,246,82'"/> 	
+					 	      <Label text="删除" font="3" textcolor="0xff3D3F41" textpadding="20,20,10,10"  height="50"/>
+					 	   </VerticalLayout>
+					 	   <Control  width="40"/>
+					 	    <VerticalLayout width="82"  >
+					 	   	  <Button name="ListBtn"  height="82"  normalimage="file='listButton.png' source='0,0,82,82'" hotimage="file='listButton.png' source='82,0,164,82'" pushedimage="file='listButton.png' source='164,0,246,82'"/> 	
+					 	      <Label text="目录" font="3" textcolor="0xff3D3F41" textpadding="20,20,10,10"  height="50"/>
+					 	   </VerticalLayout>
+					 </HorizontalLayout >
+					 <HorizontalLayout />
+			  </HorizontalLayout>
+			  <HorizontalLayout height="20"/>
+		</VerticalLayout>		
+</Window>
